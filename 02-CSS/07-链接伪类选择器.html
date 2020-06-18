@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接伪类选择器</title>
+    <style>
+        /* 按照LVHA的顺序来书写 link visited hover active的顺序来书写 */
+
+        /* 把没有访问过的链接选出来 */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* 选择点击过的链接 */
+        a:visited {
+            color: red;
+        }
+
+        /* 选择鼠标经过的链接 */
+        a:hover {
+            color: orange;
+        }
+
+        /* 选择鼠标正在按下，还没弹起的链接 */
+        a:active {
+            color: green;
+        }
+
+        /* 实际开发使用 */
+        /* a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #369;
+            text-decoration: underline;
+        } */
+    </style>
+</head>
+
+<body>
+    <a href="#">滴滴答</a><br>
+    <a href="http://www.baidu.com">哒哒哒</a>
+</body>
+
+</html>
