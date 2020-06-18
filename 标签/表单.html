@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <form action="">
+        <!-- text 文本框 -->
+        <!-- maxlength限制长度 -->
+        <label for="username">用户名:</label><input type="text" name="username" id="username" value="请输入用户名" maxlength="6"> <br>
+        <!-- password专门密码 -->
+        密码：<input type="password" name="password"> <br>
+        <!-- radio是单选按钮 -->
+        <!-- name是表单元素的名字 性别单选按钮必须要有相同的名字 才能实现多选一 -->
+        <!-- checked当页面一打开就有一个选项 -->
+        性别：<label for="男">男</label> <input type="radio" name="sex" value="男" id="男" checked="checked"> <label for="女">女</label> <input type="radio" name="sex" id="女" value="女"> <br>
+        <!-- checkbox多选按钮 -->
+        爱好： 吃饭<input type="checkbox" name="hobby" value="吃饭" checked="checked"> 睡觉<input type="checkbox" name="hobby" value="睡觉"> 打豆豆 <input type="checkbox" name="hobby" value="打豆豆"> <br>
+        <!-- 提交 -->
+        <input type="submit" value="免费注册"> <br>
+        <!-- 重置按钮 -->
+        <input type="reset" value="重置"> <br>
+        <!-- button普通按钮 -->
+        <input type="button" value="获取短信验证码"> <br>
+        <!-- 文件上传 -->
+        <input type="file">
+
+
+
+    </form>
+</body>
+</html>
